@@ -79,7 +79,10 @@
 }
 
 /* Contact */
-
+.contact {
+    height: 60vh;
+    width: 100%;
+}
 /* Footer */
 .icons:hover,
 .icons:focus {
