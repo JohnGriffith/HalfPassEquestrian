@@ -17,30 +17,36 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light navbar-expand-lg bg-info">
+        <nav class="navbar navbar-light bg-info fixed-top">
             <div class="container-fluid">
-                <div class="navbar-brand">
+                <div class="navbar-brand ms-sm-4">
                     <img class="logo-img" src="/icons/halfpasstrot.svg" alt="" />
                     <span class="logo-name">HalfPass Equestrian</span>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
+                <button class="navbar-toggler me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                </button>    
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HalfPass Equestrian</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#services" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -50,42 +56,43 @@
             <div class="landing-img-wrapper">
                 <img src="/img/GreenRider.JPG" alt="Woman on horse jumping a stump" class="landing-img" />
             </div>
-            <div class="landing-focus">
-                <h1 class="landing-title float-sm-start">HalfPass Equestrian</h1>
-                <p class="landing-lead float-sm-start">We look forward to developing you in your quest for Equestrian excellence.<br>
+            <div class="landing-focus p-3">
+                <h1 class="landing-title">HalfPass Equestrian</h1>
+                <p class="landing-lead">We look forward to developing you in your quest for Equestrian excellence.<br>
                 <br>
                 <strong>**This is a demo project and fictional company no services are offered or avaiable.**</strong></p>
                 <br>
-                <a href="#contact" class="btn landing-btn mt-4 me-5" role="button">Let's talk</a>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <a href="#contact" class="btn btn-lg btn-cta" role="button">Let's Talk</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="about container px-3 mt-md-5" id="about">
+        <section class="about container-fluid" id="about">
             <div class="row">
-                <div class="col-sm-12 col-md-6 my-3 d-flex flex-column align-items-center">
+                <div class="col-md-6 d-flex flex-column align-items-center mb-sm-3">
                     <img src="/img/philipp-reiner-qPJ6eRAMmCM-unsplash.jpg" alt="barn and field at sunrise" class="about-img mb-3" >
                     <caption class="about-caption">Photo by Philipp Reiner on <a href="https://unsplash.com/photos/qPJ6eRAMmCM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Unsplash</a></caption>
                 </div>
-                <div class="col-sm-12 col-md-6 d-flex flex-column p-3">
+                <div class="col-md-6 px-sm-5 about-message">
                     <div class="d-flex justify-content-center">
                         <h3>About Us</h3>
                     </div>
-                    <p class="about-paragraph">Located just south of the U.S/ Candian border on 50 beautiful Pacific Northwest acreage, we are a year-round equestrian facility that can support all your equestrian needs. From complete novice to a grandprix contenders, we have the facilities to help you and your horse reach the top of your potential. </p>
+                    <p class="about-paragraph">Located just south of the U.S. / Canadian border on 50 beautiful Pacific Northwest acreage, we are a year-round equestrian facility that can support all your equestrian needs. From complete novice to a grandprix contenders, we have the facilities to help you and your horse reach the top of your potential.</p>
                     <p class="about-paragraph">We host a variety of tournaments, schools, and shows throughout the year as well as partnering with local and international instructors to provide individual lessons and group clinics.</p>
+                    <div class="about-btn">
+                        <a href="#contact" class="btn btn-lg btn-cta about-btn" role="button">Ready to Ride</a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="services container px-3" id="services">
-            <div class="d-flex justify-content-center mb-2">
+            <div class="d-flex justify-content-center mb-4">
                 <h3>Services</h3>
             </div>
-            <div id="list-example" class="list-group mb-3">
-                <a class="list-group-item list-group-item-action" href="#lessons">Lessons</a>
-                <a class="list-group-item list-group-item-action" href="#boarding">Boarding</a>
-                <a class="list-group-item list-group-item-action" href="#breeding">Breeding</a>
-                <a class="list-group-item list-group-item-action" href="#shows">Shows</a>
-            </div>
-            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example justify-content-between justify-content-lg-evenly" tabindex="0">
+            <div class="services-items justify-content-between justify-content-lg-evenly">
                 <h4 id="lessons">Lessons</h4>
                 <p>We work with Local Independent Instructors to provide you and your horse with the best possible learning environment. We have four indoor and four outdoor arenas that can be setup for almost any equestrian discipline. Don't have a horse, not a problem. We have a 24 stall barn of horses that are available for lessons and leasing.</p>
                 <h4 id="boarding">Boarding</h4>
@@ -98,7 +105,7 @@
         </section>
         <section class="contact container px-3" id="contact">
             <h1 class="text-center mb-3">Contact Us</h1>
-            <form name="contact" method="post" data-netlify="true">
+            <form name="contact" method="post" data-netlify="true"  data-netlify-recaptcha="true">
                 <div class="row mb-1">
                     <div class="col-sm-12 col-md-6">
                         <label class="form-label">First Name</label>
@@ -137,6 +144,7 @@
                             aria-label="Message" required></textarea>
                     </div>
                 </div>
+                <div data-netlify-recaptcha="true"></div>
                 <button type="submit" class="btn btn-primary mt-2">Submit</button>
             </form>
         </section>
@@ -147,10 +155,10 @@
             <div class="col-sm-12 order-3 col-md-3 order-md-1 ps-4 ms-md-4 d-flex align-items-center justify-content-center ">
                 <p>Copyright 2022 JGWebDev&copy; </p>
             </div>
-            <div class="col-sm-12 order-2 mt-4 p-2 col-md-5 d-flex justify-content-center align-items-center">
+            <div class="col-sm-12 order-2 my-4 p-2 col-md-5 d-flex justify-content-center align-items-center">
                 <img src="/icons/halfpasstrot.svg" alt="logo" class="logo-img"/>
             </div>
-            <div class="col-sm-12 order-1 col-md-3 order-md-3 d-flex justify-content-evenly align-items-center">
+            <div class="col-sm-12 order-1 col-md-3 order-md-3 mt-sm-3 d-flex justify-content-evenly align-items-center">
                 <div class="icons d-flex justify-content-center align-items-center">
                     <i class="fa-brands fa-facebook-square fa-2x"></i>
                 </div>

@@ -1,148 +1,114 @@
-/* Nav Bar */
+
+/* global */
+body {
+    background-color: #e4e0d7d8;
+}
+
+/* Navigation */
 .logo-img {
     height: 75px;
     width: 75px;
 }
 
-.nav-link {
-    color: black;
-}
-
-.nav-link:active {
-    color: white;
+.logo-name {
+    font-size: 2rem;
 }
 
 /* Sections */
 
-/* Landing  */
-.landing {
-    height: 100vh;
-    width: auto;
+/* Landing */
+
+.landing{
+    position: relative;
 }
 
 .landing-img-wrapper {
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    position: relative;
     background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
 
 .landing-img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
     opacity: .5;
     overflow: hidden;
 }
 
 .landing-focus {
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 30%;
+    left: 15%;
 }
 
 .landing-title {
+    font-size: 4rem;
+    letter-spacing: .2rem;
     color: #fff;
-    letter-spacing: .1rem;
 }
 
 .landing-lead {
-    color: #fff;
+    font-size: 1.618rem;
     letter-spacing: .1rem;
-}
-
-.landing-btn {
-    background-color: green;
     color: #fff;
-    float: right !important;
 }
 
 /* About */
 
 .about {
-    min-height: 50vh;
-    width: 100%;
+    padding-top: 8rem;
 }
 
 .about-img {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.about-paragraph {
-    text-indent: 1rem;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
 
 /* Services */
+
 .services {
-    height: 100%;
-    width: 100%;
+    padding-top: 8rem;
+}
+
+.services-toc {
+    display: none;
 }
 
 /* Contact */
+
 .contact {
-    height: 100%;
-    width: 100%;
+    padding-top: 4rem;
 }
-/* Footer */
+
+/* Individual components */
+
+section {
+    min-height: 100%;
+}
+
+.btn-cta {
+    background-color: green;
+    color: #fff;
+}
+
 .icons:hover,
 .icons:focus {
-    background-color: #0dcaf0;
+    background-color: cyan;
     border-radius: 20%;
-    height: 45px;
-    width: 45px;
+    height: 30px;
+    width: 30px;
 }
 
 /* Media Queries */
-@media (min-width: 1400px) {
-    .landing-btn {
-        float:none;
-    }
-}
-
-@media (min-width: 1300px) {
-    .landing-focus {
-        left: 15%;
-    }
-
-    .landing-btn {
-        float: none !important;
-        transform: translateX(300%);
-    }
-}
-
-@media (min-width) {
-    
-}
 
 @media (min-width: 992px) {
-    .about {
-        display: flex;
-    }
-
-    .about-img {
-        height: 70%;
-        width: 100%;
-    }
-
-    .about-paragraph {
-        font-size: 1.2rem;
-        padding-left: 1rem;
-    }
-
-    .list-group {
-        display: none;
-    }
-
-}
-
-
-@media (min-width: 768px){
     .landing-focus {
-        top: 40%;
+        margin-right: 2rem;
     }
 
     .landing-title {
@@ -150,15 +116,96 @@
     }
 
     .landing-lead {
-        font-size: 1.5rem;
-        padding: auto 2rem;
-        margin-right: 1rem;
+        font-size: 1.618rem;
     }
 
-    .landing-btn {
-        padding: 1rem 2rem;
-        font-size: 1.3rem;
-        margin-right: 5rem;
+    .about-paragraph {
+        margin-right: 2rem;
     }
 }
 
+@media (max-width: 768px) {
+    .landing {
+        padding-top: 4rem;
+    }
+
+    .landing-focus {
+        margin-right: 2rem;
+    }
+
+    .landing-title {
+        font-size: 2rem;
+    }
+
+    .landing-lead {
+        font-size: 1rem;
+    }
+
+    .about-paragraph {
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    
+
+    .landing {
+        padding-top: 4rem;
+    }
+
+    .services {
+        padding-top: 8rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 80%;
+    }
+
+    .logo-name {
+        font-size: 1.1rem;
+    }
+
+    .landing {
+        margin-top: 5.5rem;
+    }
+
+    .landing-focus {
+        top: 15%;
+        left: 5%;
+    }
+
+    .landing-title {
+        font-size: 1.6rem;
+    }
+
+    .landing-lead {
+        font-size: .8rem;
+    }
+
+    .btn-cta {
+        padding: .2rem;
+        font-size: .8rem;
+    }
+
+    .about {
+        padding-top: 5.5rem;
+    }
+
+    .about-message {
+        margin-top: 1.5rem;
+    }
+
+    .about-paragraph {
+        margin: auto 2rem;
+    }
+
+    .about-btn {
+        margin: 1rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+}
