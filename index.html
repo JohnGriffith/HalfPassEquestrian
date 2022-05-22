@@ -55,33 +55,37 @@
                 <p class="landing-lead float-sm-start">We look forward to developing you in your quest for Equestrian excellence.<br>
                 <br>
                 <strong>**This is a demo project and fictional company no services are offered or avaiable.**</strong></p>
+                <br>
                 <a href="#contact" class="btn landing-btn mt-4 me-5" role="button">Let's talk</a>
             </div>
         </section>
 
-        <section class="about container px-3" id="about">
+        <section class="about container px-3 mt-md-5" id="about">
             <div class="row">
                 <div class="col-sm-12 col-md-6 my-3 d-flex flex-column align-items-center">
-                    <img src="/img/philipp-reiner-qPJ6eRAMmCM-unsplash.jpg" alt="barn and field at sunrise" class="about-img" >
+                    <img src="/img/philipp-reiner-qPJ6eRAMmCM-unsplash.jpg" alt="barn and field at sunrise" class="about-img mb-3" >
                     <caption class="about-caption">Photo by Philipp Reiner on <a href="https://unsplash.com/photos/qPJ6eRAMmCM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Unsplash</a></caption>
                 </div>
                 <div class="col-sm-12 col-md-6 d-flex flex-column p-3">
                     <div class="d-flex justify-content-center">
                         <h3>About Us</h3>
                     </div>
-                    <p>Located just south of the U.S/ Candian border on 50 beautiful Pacific Northwest acreage, we are a year-round equestrian facility that can support all your equestrian needs. From complete novice to a grandprix contenders, we have the facilities to help you and your horse reach the top of your potential. </p>
-                    <p>We host a variety of tournaments, schools, and shows throughout the year as well as partnering with local and international instructors to provide individual lessons and group clinics.</p>
+                    <p class="about-paragraph">Located just south of the U.S/ Candian border on 50 beautiful Pacific Northwest acreage, we are a year-round equestrian facility that can support all your equestrian needs. From complete novice to a grandprix contenders, we have the facilities to help you and your horse reach the top of your potential. </p>
+                    <p class="about-paragraph">We host a variety of tournaments, schools, and shows throughout the year as well as partnering with local and international instructors to provide individual lessons and group clinics.</p>
                 </div>
             </div>
         </section>
         <section class="services container px-3" id="services">
-            <div id="list-example" class="list-group">
+            <div class="d-flex justify-content-center mb-2">
+                <h3>Services</h3>
+            </div>
+            <div id="list-example" class="list-group mb-3">
                 <a class="list-group-item list-group-item-action" href="#lessons">Lessons</a>
                 <a class="list-group-item list-group-item-action" href="#boarding">Boarding</a>
                 <a class="list-group-item list-group-item-action" href="#breeding">Breeding</a>
                 <a class="list-group-item list-group-item-action" href="#shows">Shows</a>
             </div>
-            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example justify-content-between justify-content-lg-evenly" tabindex="0">
                 <h4 id="lessons">Lessons</h4>
                 <p>We work with Local Independent Instructors to provide you and your horse with the best possible learning environment. We have four indoor and four outdoor arenas that can be setup for almost any equestrian discipline. Don't have a horse, not a problem. We have a 24 stall barn of horses that are available for lessons and leasing.</p>
                 <h4 id="boarding">Boarding</h4>
@@ -96,24 +100,24 @@
             <h1 class="text-center mb-3">Contact Us</h1>
             <form name="contact" method="post" data-netlify="true">
                 <div class="row mb-1">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 col-md-6">
                         <label class="form-label">First Name</label>
                         <input type="text" name="firstName" class="form-control" placeholder="First name"
                             aria-label="First name" required>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 col-md-6">
                         <label class="form-label">Last Name</label>
                         <input type="text" name="lastName" class="form-control" placeholder="Last name"
                             aria-label="Last name" required>
                     </div>
                 </div>
                 <div class="row mb-1">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 col-md-6">
                         <label class="form-label">Email</label>
                         <input type="email" name="email" class="form-control" placeholder="Email"
                             aria-label="Email" required>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 col-md-6">
                         <label class="form-label">Phone (optional)</label>
                         <input type="text" name="phone" class="form-control" placeholder="Phone"
                             aria-label="Phone">
@@ -137,15 +141,16 @@
             </form>
         </section>
     </main>
-    <footer class="footer container-fluid g-0 p-3 mt-2">
+    <footer class="footer container-fluid g-0 p-3 my-2">
         <div class="row">
-            <div class="col-sm-12 order-3 m-2 p-2 d-flex align-items-center justify-content-center">
+            <hr/>
+            <div class="col-sm-12 order-3 m-2 p-2 col-md-3 order-md-1 ps-4 ms-4 d-flex align-items-center justify-content-center ">
                 <p>Copyright 2022 JGWebDev&copy; </p>
             </div>
-            <div class="col-sm-12 order-2 mt-4 p-2 d-flex justify-content-center align-items-center">
+            <div class="col-sm-12 order-2 mt-4 p-2 col-md-5 d-flex justify-content-center align-items-center">
                 <img src="/icons/halfpasstrot.svg" alt="logo" class="logo-img"/>
             </div>
-            <div class="col-sm-12 order-1 d-flex justify-content-evenly align-items-center">
+            <div class="col-sm-12 order-1 col-md-3 order-md-3 d-flex justify-content-evenly align-items-center">
                 <div class="icons d-flex justify-content-center align-items-center">
                     <i class="fa-brands fa-facebook-square fa-2x"></i>
                 </div>

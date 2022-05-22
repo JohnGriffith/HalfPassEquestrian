@@ -68,6 +68,18 @@
     object-fit: cover;
 }
 
+.about-paragraph {
+    text-indent: 1rem;
+}
+
+/* Services */
+.services {
+    height: 80vh;
+    width: 100%;
+}
+
+/* Contact */
+
 /* Footer */
 .icons:hover,
 .icons:focus {
@@ -78,5 +90,72 @@
 }
 
 /* Media Queries */
+@media (min-width: 1400px) {
+    .landing-btn {
+        transform: translateX(-600%);
+    }
+}
 
+@media (min-width: 1300px) {
+    .landing-focus {
+        left: 15%;
+    }
+
+    .landing-btn {
+        float: none !important;
+        transform: translateX(300%);
+    }
+}
+
+@media (min-width) {
+    
+}
+
+@media (min-width: 992px) {
+    .about {
+        display: flex;
+    }
+
+    .about-img {
+        height: 70%;
+        width: 100%;
+    }
+
+    .about-paragraph {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+
+    .services {
+        height: 45vh;
+    }
+
+    .list-group {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 768px){
+    .landing-focus {
+        top: 40%;
+    }
+
+    .landing-title {
+        font-size: 4rem;
+    }
+
+    .landing-lead {
+        font-size: 1.5rem;
+        padding: auto 2rem;
+        margin-right: 1rem;
+    }
+
+    .landing-btn {
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
+        margin-right: 5rem;
+    }
+}
 
