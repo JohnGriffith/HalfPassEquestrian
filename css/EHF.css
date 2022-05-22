@@ -8,6 +8,10 @@
     color: black;
 }
 
+.nav-link:active {
+    color: white;
+}
+
 /* Sections */
 
 /* Landing  */
@@ -74,13 +78,13 @@
 
 /* Services */
 .services {
-    height: 80vh;
+    height: 100%;
     width: 100%;
 }
 
 /* Contact */
 .contact {
-    height: 60vh;
+    height: 100%;
     width: 100%;
 }
 /* Footer */
@@ -95,7 +99,7 @@
 /* Media Queries */
 @media (min-width: 1400px) {
     .landing-btn {
-        transform: translateX(-600%);
+        float:none;
     }
 }
 
@@ -127,10 +131,6 @@
     .about-paragraph {
         font-size: 1.2rem;
         padding-left: 1rem;
-    }
-
-    .services {
-        height: 45vh;
     }
 
     .list-group {
